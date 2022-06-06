@@ -35,15 +35,9 @@ public class Main extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
-	public void changeRed(StackPane root) {
-		System.out.println("Cambiado a color rojo");
-	}
-	private void changeGreen(StackPane root) {
-		System.out.println("Cambiado a color verde");
-	}
-	private void changeBlue(StackPane root) {
-		System.out.println("Cambiado a color azul");
-	}
+	private void changeRed(StackPane root) {}
+	private void changeGreen(StackPane root) {}
+	private void changeBlue(StackPane root) {}
 	public void prepare() {
 		btnContainer.getChildren().addAll(redBtn,greenBtn,blueBtn);
 		root.getChildren().add(btnContainer);
