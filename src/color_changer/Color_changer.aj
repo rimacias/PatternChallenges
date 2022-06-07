@@ -17,6 +17,13 @@ public aspect Color_changer {
 		root.setStyle("-fx-background-color: green;");
 		System.out.println("Cambiado a color verde");
 	}
+	pointcut successBlue(): call(* *Blue(..));
+	after(): successBlue(){
+		Object[] parameterList = thisJoinPoint.getArgs();
+		StackPane root = (StackPane) parameterList[0]; 
+		root.setStyle("-fx-background-color: blue;");
+		System.out.println("Cambiado a color verde");
+	}
 		
 	
 }
