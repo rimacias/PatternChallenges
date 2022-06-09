@@ -1,11 +1,7 @@
 package color_changer;
 
-import java.util.concurrent.TimeUnit;
 
-import javafx.animation.PauseTransition;
-import javafx.concurrent.Task;
 import javafx.scene.layout.StackPane;
-import javafx.util.Duration;
 
 public aspect Color_changer {
 	pointcut successRed(): call(* *Red(..));

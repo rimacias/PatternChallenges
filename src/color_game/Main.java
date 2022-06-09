@@ -26,7 +26,6 @@ public class Main extends Application {
 		prepare();
 		Scene scene = new Scene(root,600,400);
 		StackPane.setAlignment(btnContainer,Pos.CENTER);
-		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		primaryStage.setTitle("COLOR GAME");
 		primaryStage.setScene(scene);
 		primaryStage.show();
