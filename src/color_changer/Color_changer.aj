@@ -40,11 +40,13 @@ public aspect Color_changer {
 	after(): successMix(){
 		Object[] parameterList = thisJoinPoint.getArgs();
 		StackPane root = (StackPane) parameterList[0];
-		String[] colores = { "#c4fdd2", "#f1fc7f", "#EDFED3", "#79fcce", "#ffdfa9", "#fdb0a7", "#fc83a2" };
+		String[] colores = { "orange", "yellow", "pink", "chocolate", "violet", "cyan", "grey" };
 		int al = (int) Math.round(Math.random() * (colores.length - 1));
 		String color_al = colores[al];
 		String s = "-fx-background-color: " + color_al + ";";
 		root.setStyle(s);
+		System.out.println("Cambiado a color " + color_al);
+
 
 		
 	}
